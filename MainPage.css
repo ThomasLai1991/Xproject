@@ -1,0 +1,76 @@
+
+#main{
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+html { scroll-behavior: smooth; }
+
+@media screen and (max-width:1300px){
+    #main{
+        flex-direction: column;
+    }
+}
+
+#main-sign{
+    height: 55rem;
+    width:40%;
+ 
+}
+
+#main-x{
+    font-size:25rem;
+    font-weight:900;
+    color:#adfaff;
+    position: relative;
+    left:20rem;
+    top:8rem;
+    z-index: -2;
+}
+
+#main-nihao{
+    font-size: 5rem;
+    font-weight: 500;
+    text-shadow: -0.3rem 0rem #34deeb;
+    position: relative;
+    top:-12rem;
+    left:23rem;
+    z-index: -1;
+}
+
+#main-description{
+    width: 60%;
+
+}
+#main-text{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-top: 15rem;
+    margin-right: 15rem;
+    margin-left: 10rem;
+    color:black;
+
+}
+span{
+   
+    color:#34deeb;
+}
+#main-button{
+    position: relative;
+    top:5rem;
+    left:9.0rem;
+    color:white;
+    background-color: #34b4eb;
+    border-radius: 50px;
+    box-shadow: -6px -5px 0px 0px #34deeb;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 0;
+    
+}
+
