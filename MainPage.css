@@ -15,57 +15,47 @@ html { scroll-behavior: smooth; }
 }
 
 #main-sign{
-    height: 55rem;
+
     width:40%;
- 
+    position: relative;
+    top:11rem;
+    left:3rem;
 }
 
-#main-x{
-    font-size:25rem;
-    font-weight:900;
-    color:#adfaff;
-    position: relative;
-    left:20rem;
-    top:8rem;
-    z-index: -2;
+div#main-sign img{
+    width: 28.98rem;
+    height:18rem;
 }
 
-#main-nihao{
-    font-size: 5rem;
-    font-weight: 500;
-    text-shadow: -0.3rem 0rem #34deeb;
-    position: relative;
-    top:-12rem;
-    left:23rem;
-    z-index: -1;
-}
+
 
 #main-description{
+    padding-top:11rem;
+    margin-right:5rem;
+    margin-left: 7rem;
     width: 60%;
-
+   
 }
 #main-text{
     font-size: 1.1rem;
     line-height: 2rem;
-    margin-top: 15rem;
-    margin-right: 15rem;
-    margin-left: 10rem;
-    color:black;
 
+    color:black;
 }
+    
 span{
    
     color:#34deeb;
 }
 #main-button{
     position: relative;
-    top:5rem;
-    left:9.0rem;
+    top:1rem;
+    left:0rem;
     color:white;
     background-color: #34b4eb;
     border-radius: 50px;
     box-shadow: -6px -5px 0px 0px #34deeb;
-    padding: 15px 32px;
+    padding: 10px 22px;
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
