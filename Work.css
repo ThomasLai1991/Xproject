@@ -1,5 +1,50 @@
+
+#main{
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+@media screen and (max-width:1300px){
+  #main{
+      flex-direction: column;
+  }
+}
+
+#main-sign{
+
+  width:40%;
+  position: relative;
+  top:11rem;
+  left:3rem;
+}
+
+
+div#main-sign img{
+  width: 25.76rem;
+  height:16rem;
+}
+
+#main-description{
+  padding-top:11rem;
+  margin-right:5rem;
+  margin-left: 12rem;
+  width: 60%;
+ 
+}
+#main-text{
+  font-size: 1.1rem;
+  line-height: 2rem;
+
+  color:black;
+}
+  
+
 .container {
     position: relative;
+    margin-top: 15rem;
    padding: 0 5rem 0 5rem;
 
   }
@@ -81,3 +126,23 @@
   .demo:hover {
     opacity: 1;
   }
+
+
+  #collection{
+    width:100%;
+    height:55rem;
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.collection-column{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.collection-column>img{
+    height: 15rem;
+    width: 100%;;
+}
