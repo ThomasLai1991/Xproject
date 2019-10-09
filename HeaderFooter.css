@@ -4,16 +4,20 @@
     margin:0;
     padding: 0%;
     box-sizing: border-box;
+    --deep-blue:#34b4eb;
+    --light-blue:#34deeb;
     /* 
     1.cancel margin and padding 
     2.set box-sizing to include padding and maring 
     */
 }
-html, body{ 
+
+
+body{ 
     font-size: 16px;
-    font-family: 'Futura','Lato', sans-serif;
-    --deep-blue:#34b4eb;
-    --light-blue:#34deeb;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     color:var(--deep-blue);
     /* 
     1. set base font size
@@ -21,78 +25,130 @@ html, body{
     */
 }
 
+li{
+    list-style: none;
+}
+
 
 /* HEADER AREA */
 
+a{
+    color:#000;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    box-shadow:
+    0px 2px var(--light-blue),
+    0px 6px var(--deep-blue);
+
+    line-height: 0.85;
+
+  }
+  
+
 
 header {
+
     position: fixed;
-    top:0rem;
-    /* 
-    1. fix the header, make it sticky;
-    2. make its relative position to top as 0; 
-    */
+    top:0;
+
+    background-color:#eee;
+
     width: 100%;
-    height:6rem;
-    /*
-    1.take up the whole width of parent; 
-    2.set the height;
-    */
-    background-color: #eee;
-    /*
-    set color  
-    */
-    /* CHILD ELEMENT */
+    min-height: 75px;
+    padding:0px 20px;
+
     display: flex;
-    flex-direction: row;
-    /* 
-    1.make it flex model
-    */
+    justify-content: space-around;
+    align-items: center;
+
     z-index: 1  ;
 }
+
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+
 #logo{
-    width:40%;
-    height:100%;
-    padding:1rem 0 0 10rem;
+ 
+    width:60vw;
+    padding:1rem 0 1rem 10rem;
+    
 
     /* 
     1. set padding to adjust the child a tag position
     */
 }
+
+@media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+
 #logo >a{
-    font-size: 2.5rem;
+ 
+
+    font-size: 3rem;
     font-weight: 700;
     color:#34b4eb;
     text-decoration:none;
     text-shadow: 0.3rem 0rem var(--light-blue);
-    /* 
-    1.cancel a tag default underline;
-    */
+
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
 }
-
-
-/* NAV LINK AREA */
 
 
 nav{
-    width:60%;
 
 }
+
+
+@media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+
+
 nav >ul{
+
+    width:25vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width:100%;
 }
+@media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+
+
 nav li{
     font-weight: 550;
     text-shadow: 0.09rem 0.09rem var(--light-blue);
-    padding-top: 1.6rem;
-    list-style: none;
-    /* 
-    1.set padding top to adjust child li tag position
-    2.cancel default list dot in 
-    */
 }
 nav li a{
     color:var(--deep-blue);

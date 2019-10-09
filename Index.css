@@ -1,55 +1,43 @@
 
+*{
+    --deep-blue:#34b4eb;
+    --light-blue:#34deeb;
+}
 #main{
-    margin-top: 0rem;
     display: flex;
     flex-direction: row;
- 
+    position: relative;;
+    top:10rem;
 }
-
-html { scroll-behavior: smooth; }
-
-@media screen and (max-width:1300px){
-    #main{
-        flex-direction: column;
-    }
-}
-
-#main-sign{
-
+#xSign{
     width:40%;
-    position: relative;
-    top:11rem;
-    left:3rem;
 }
 
-div#main-sign img{
+div#xSign img{
+    position: relative;
+    top:10rem;
+    float:right;
     width: 28.98rem;
     height:18rem;
 }
 
-
-
-#main-description{
+#textArea{
     padding-top:11rem;
     margin-right:5rem;
-    margin-left: 7rem;
     width: 60%;
-   
 }
-#main-text{
+#text{
     font-size: 1.1rem;
     line-height: 2rem;
-
     color:black;
 }
     
-span{
-   
+#text span{
     color:#34deeb;
 }
-#main-button{
+#Button{
     position: relative;
-    top:1rem;
+    top:4rem;
     left:0rem;
     color:white;
     background-color: #34b4eb;
@@ -64,3 +52,7 @@ span{
     
 }
 
+
+@media screen and (max-width:1300px){
+ 
+}

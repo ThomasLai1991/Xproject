@@ -2,41 +2,31 @@
     --deep-blue:#34b4eb;
     --light-blue:#34deeb;
 }
-#Contact-page{    
-background-color:rgb(255, 255, 255);
+#main{    
 display: flex;
 flex-direction: row;
-margin-top: 3rem;
-padding-bottom: 5rem;
+position: relative;
+top:10rem;
 }
-#contact-sign{
-    height: 48rem;
+#xSign{
     width: 40%;
 }
-#contact-x{
-    font-size:35rem;
-    color:#adfaff;
+div#xSign img{
     position: relative;
-    left:15rem;
-    top:0rem;
-    z-index: 0;
+    top:10rem;
+    float:right;
+    width: 28.98rem;
+    height:18rem;
 }
-#contact-contact{
-    font-size: 5rem;
-    font-weight: 500;
-    text-shadow: -0.5rem 0rem #34deeb;
-    position: relative;
-    top:-27rem;
-    left:17rem;
-    z-index: 0;
-}
-#contact-info{
+
+
+#text{
     width:60%;    
-    margin-top: 15rem;
+    margin-top: 11rem;
     margin-left: 10rem;
-    color:black;
     color:var(--deep-blue);
 }
+
 div>h1{
     font-size: 4rem;
 
