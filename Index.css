@@ -6,29 +6,27 @@
 #main{
     display: flex;
     flex-direction: row;
-    position: relative;;
-    top:10rem;
+    margin-top: 28vh;
 }
 #xSign{
     width:40%;
 }
 
 div#xSign img{
-    position: relative;
-    top:10rem;
     float:right;
-    width: 28.98rem;
-    height:18rem;
+    width: 30vw;
+
 }
 
 #textArea{
-    padding-top:11rem;
-    margin-right:5rem;
+    padding-top:3vh;
+    padding-right:15vw;
     width: 60%;
+
 }
 #text{
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 1vw;
+    line-height: 3vh;
     color:black;
 }
     
@@ -37,16 +35,16 @@ div#xSign img{
 }
 #Button{
     position: relative;
-    top:4rem;
+    top:10vh;
     left:0rem;
     color:white;
     background-color: #34b4eb;
-    border-radius: 50px;
-    box-shadow: -6px -5px 0px 0px #34deeb;
-    padding: 10px 22px;
+    border-radius: 3vw;
+    box-shadow: -0.3vw -0.3vw 0px 0px #34deeb;
+    padding: 0.7vw 1.6vw;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.4vw;
     cursor: pointer;
     z-index: 0;
     

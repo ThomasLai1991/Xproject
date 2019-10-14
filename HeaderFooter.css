@@ -57,9 +57,8 @@ header {
     background-color:#eee;
 
     width: 100%;
-    min-height: 75px;
-    padding:0px 20px;
-
+    height: 8vh;
+ 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,16 +66,10 @@ header {
     z-index: 1  ;
 }
 
-@media (max-width: 600px) {
-    header {
-      flex-wrap: wrap;
-    }
-  }
-
 #logo{
- 
+    padding-left: 5vw;
     width:60vw;
-    padding:1rem 0 1rem 10rem;
+    
     
 
     /* 
@@ -84,23 +77,16 @@ header {
     */
 }
 
-@media (max-width: 650px) {
-    .logo {
-      margin-top: 15px;
-      width: 100%;
-      position: relative;
-    }
-  }
 
 
 #logo >a{
  
 
-    font-size: 3rem;
+    font-size: 2.5vw;
     font-weight: 700;
     color:#34b4eb;
     text-decoration:none;
-    text-shadow: 0.3rem 0rem var(--light-blue);
+    text-shadow: 0.2vw 0vw var(--light-blue);
 
     
     justify-content: center;
@@ -116,20 +102,7 @@ nav{
 }
 
 
-@media (max-width: 650px) {
-    nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
-    }
-    nav li {
-      padding-bottom: 5px;
-    }
-  }
+
 
 
 nav >ul{
@@ -139,22 +112,17 @@ nav >ul{
     flex-direction: row;
     justify-content: space-around;
 }
-@media (max-width: 650px) {
-    nav > ul {
-      flex-direction: column;
-    }
-  }
 
 
 nav li{
     font-weight: 550;
-    text-shadow: 0.09rem 0.09rem var(--light-blue);
+    text-shadow: 0.09vw 0.09vw var(--light-blue);
 }
 nav li a{
     color:var(--deep-blue);
     text-decoration:none;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.5vw;
 }
 
 
@@ -167,13 +135,13 @@ nav li a{
     bottom:0rem;
     /* sticky footer at bottom */
     width:100%;
-    height: 5rem;
+    height: 8vh;
 }
 #footer> #light-blue-strip{
     background-color: var(--light-blue);
-    height: 1rem;
+    height: 2vh;
 }
 #footer> #deep-blue-strip{
-    height: 4rem;
+    height: 6vh;
     background-color: var(--deep-blue);
 }
