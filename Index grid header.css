@@ -1,0 +1,45 @@
+
+
+
+.navbar{
+    grid-area: header;  
+    display: grid;
+}
+.navbar div{
+    
+    font-size: 2rem;
+    background-color: var(--deep-blue);
+    transition:background-color 0.3s ease-out;
+    text-shadow: 0.09vw 0.09vw gray;
+}
+.navbar div:hover{
+    background-color: var(--light-blue);
+}
+
+@media(min-width: 400px){
+    .navbar{
+      
+        display: grid;
+        grid-auto-rows: 100%;
+        grid-template-columns: repeat(12,1fr);
+        background-color: var(--deep-blue);
+        border-bottom: 2px solid gold;
+        
+    }
+    .navbar div{
+        padding: 1rem;
+    }
+    .home{
+       grid-area: 1/1/2/7;
+    }
+
+    .link1{
+      grid-area: 1/7/2/10;  
+    }
+    .link2{
+        grid-area: 1/10/2/13;  
+    }
+    a{
+        font-size: 2rem;
+    }
+}
